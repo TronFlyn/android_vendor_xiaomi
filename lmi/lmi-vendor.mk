@@ -74,3 +74,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/lmi/proprietary/product/vendor_overlay/29/lib/modules/rmnet_shs.ko:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/modules/rmnet_shs.ko \
     vendor/xiaomi/lmi/proprietary/product/vendor_overlay/29/lib/modules/sla.ko:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/modules/sla.ko \
     vendor/xiaomi/lmi/proprietary/product/vendor_overlay/29/lib/modules/tspp.ko:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/lib/modules/tspp.ko
+
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/xiaomi/lmi/proprietary/lib/camera,$(TARGET_COPY_OUT_PRODUCT)/lib/camera)
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,vendor/xiaomi/lmi/proprietary/lib64/camera,$(TARGET_COPY_OUT_PRODUCT)/lib64/camera)
